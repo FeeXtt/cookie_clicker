@@ -34,3 +34,18 @@ html {
 #cookie:hover {
     transform: scale(1.1);
 }
+#upgradeClickButton{
+    display: table;
+    margin: 0 ;
+    font-size: 24px;
+    border: none;
+    color:white;
+    background-color: green;
+    cursor: pointer;
+    transition: .2s ease;
+    border-radius: 20px;
+
+}
+#upgradeClickButton:hover{
+    transform: scale (1.2)
+}
