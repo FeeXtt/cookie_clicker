@@ -5,13 +5,13 @@
 }
 
 html {
-    background-image: url("../img/background.png");
+    background-image: url("/cookie_clicker/res/img/chalet.avif");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #cookie {
-    max-width: 120px;
+    max-width: 200px;
     width: 100%;
     display: table;
     margin: 0 auto;
@@ -27,6 +27,7 @@ html {
 
 #counter {
     font-size: 48px;
+    color: aqua;
     font-weight: bold;
     text-align: center;
 }
@@ -34,10 +35,12 @@ html {
 #cookie:hover {
     transform: scale(1.1);
 }
-#upgradeClickButton{
-    display: table;
-    margin: 0 ;
-    font-size: 24px;
+#upgradeClickButton, #autoClickButton{
+    display:flex;
+    width: 100;
+    padding: 2;
+    margin: 2;
+    font-size: 48px;
     border: none;
     color:white;
     background-color: green;
@@ -47,5 +50,8 @@ html {
 
 }
 #upgradeClickButton:hover{
+    transform: scale (1.2)
+}
+#autoClickButton:hover{
     transform: scale (1.2)
 }
