@@ -19,6 +19,7 @@ const autoclick = document.getElementById("autoClickButton");
 
 let numberOfCookies = 0;
 let clickIncrease = 1;
+let clickUpgradePrice = 50;
 let autoclickIncrease = 0;
 let autoclicker = 1;
 let autoclickerPrice = 100;
@@ -36,11 +37,13 @@ cookie.onclick = () => {
 };
 // () => scope
 upgrade.onclick = () => {
-  if (numberOfCookies >= 50) {
+  if (numberOfCookies >= clickUpgradePrice) {
     //odečtu sušenky
-    numberOfCookies -= 50;
+    numberOfCookies -= clickIncrease;
     //numberOfCookies = numberOfCookies - 50
     counter.innerText = "Cookies: " + numberOfCookies;
+    clickUpgradePrice +=50;
+    upgrade.innerText = "Buy Click upgrade: " + clickUpgradePrice;
     clickIncrease++;
   }
 };
@@ -52,7 +55,7 @@ autoclick.onclick = () => {
     //aktualizuju odstavec;
     counter.innerText = "Cookies: " + numberOfCookies;
     autoclickerPrice  += 100;
-    autoclick.innerText = "Buy auto click" + autoclickerPrice;
+    autoclick.innerText = "Buy auto click: " + autoclickerPrice;
     autoclickIncrease++;
     // interval - opakování po case pridani susenky
     clearInterval(autoclicker);
@@ -67,3 +70,4 @@ const turnOnCheats = () => {
     numberOfCookies += 100000000;
     counter.innerText = "Cookies: " + numberOfCookies;
 }
+turnOnCheats ()
