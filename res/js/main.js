@@ -14,7 +14,7 @@ proměná - vymezené místo v paměti počítače, dá se upravit, smazat a č�
 */
 const cookie = document.getElementById("cookie");
 const counter = document.getElementById("counter");
-const upgrade = document.getElementById("upgradeClickButton");
+const upgrade = document.getElementById("clickWrapper");
 const autoclick = document.getElementById("autoClickButton");
 
 let numberOfCookies = 0;

@@ -5,7 +5,7 @@
 }
 
 html {
-    background-image: url("/cookie_clicker/res/img/chalet.avif");
+    background-image: url("/res/img/chalet.avif");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -46,17 +46,28 @@ html {
     border: none;
     color:white;
     background-color: rgb(0, 128, 90);
-    border-width: 5px ;
-    border-color: green;
-    border-style: solid;
     cursor: pointer;
     transition: .2s ease;
-    border-radius: 20px;
-
+    
 }
 #upgradeClickButton:hover{
     transform: scale (1.2)
 }
 #autoClickButton:hover{
     transform: scale (1.2)
+}
+#clickWrapper{
+    background-color: rgb(0, 128, 90);
+    text-align: center;
+    padding: 5em;
+    display: flex;
+    border-width: 5px ;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: green;
+    width: auto;
+}
+.buttonimg{
+    max-width: 400px;
+    width: 100%;
 }
