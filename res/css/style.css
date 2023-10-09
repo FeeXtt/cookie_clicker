@@ -6,7 +6,7 @@
 }
 
 html {
-    background-image: url("/res/img/chalet.avif");
+    background-image: url("./res/img/chalet.avif");
     background-size: cover;
     background-repeat: no-repeat;
 }
