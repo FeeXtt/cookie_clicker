@@ -33,7 +33,7 @@ cookie.onclick = () => {
   // ++ inkrement
   numberOfCookies += clickIncrease;
   console.log(numberOfCookies);
-  counter.innerText = numberOfCookies;
+  counter.innerText = "Cookies: " + numberOfCookies;
 };
 // () => scope
 upgrade.onclick = () => {
