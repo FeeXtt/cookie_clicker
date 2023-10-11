@@ -16,6 +16,8 @@ const cookie = document.getElementById("cookie");
 const counter = document.getElementById("counter");
 const upgrade = document.getElementById("clickWrapper");
 const autoclick = document.getElementById("autoWrapper");
+const clickzmena = document.getElementById("upgradeClickButton")
+const autozmena = document.getElementById("autoClickButton")
 
 let numberOfCookies = 0;
 let clickIncrease = 1;
@@ -43,7 +45,7 @@ upgrade.onclick = () => {
     //numberOfCookies = numberOfCookies - 50
     counter.innerText = "Cookies: " + numberOfCookies;
     clickUpgradePrice +=50;
-    upgrade.innerText = "Buy Click upgrade: " + clickUpgradePrice;
+    clickzmena.innerText = "Buy Click upgrade: " + clickUpgradePrice;
     clickIncrease++;
   }
 };
@@ -55,7 +57,7 @@ autoclick.onclick = () => {
     //aktualizuju odstavec;
     counter.innerText = "Cookies: " + numberOfCookies;
     autoclickerPrice  += 100;
-    autoclick.innerText = "Buy auto click: " + autoclickerPrice;
+    autozmena.innerText = "Buy auto click: " + autoclickerPrice;
     autoclickIncrease++;
     // interval - opakování po case pridani susenky
     clearInterval(autoclicker);

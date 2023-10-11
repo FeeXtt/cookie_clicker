@@ -12,7 +12,7 @@ html {
 }
 
 #cookie {
-    max-width: 400px;
+    max-width: 200px;
     width: 100%;
     display: table;
     margin: 0 auto;
@@ -43,7 +43,7 @@ html {
     margin-left: 10%;
     padding: 2;
     margin: 2;
-    font-size: 48px;
+    font-size: 24px;
     border: none;
     color:white;
     background-color: rgba(0, 128, 90, 0%);
@@ -60,7 +60,7 @@ html {
 #clickWrapper{
     background-color: rgba(0, 128, 90, 50%);
     text-align: center;
-    padding: 5em;
+    padding: 2em;
     display: flex;
     border-width: 5px ;
     border-style: solid;
@@ -69,13 +69,13 @@ html {
     width: auto;
 }
 .buttonimg{
-    max-width: 400px;
+    max-width: 200px;
     width: 100%;
 }
 #autoWrapper{
     background-color: rgba(0, 128, 90, 50%);
     text-align: center;
-    padding: 5em;
+    padding: 2em;
     display: flex;
     border-width: 5px ;
     border-style: solid;
@@ -84,7 +84,7 @@ html {
     width: auto;
 }
 #autoWrapper{
-    margin-top: 5em;
+    margin-top: 2em;
 }
 #autoWrapper:hover {
     transform: scale(1.05);
