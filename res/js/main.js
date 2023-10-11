@@ -41,10 +41,10 @@ cookie.onclick = () => {
 upgrade.onclick = () => {
   if (numberOfCookies >= clickUpgradePrice) {
     //odečtu sušenky
-    numberOfCookies -= clickIncrease;
+    numberOfCookies -= clickUpgradePrice;
     //numberOfCookies = numberOfCookies - 50
     counter.innerText = "Cookies: " + numberOfCookies;
-    clickUpgradePrice +=50;
+    clickUpgradePrice += 50;
     clickzmena.innerText = "Buy Click upgrade: " + clickUpgradePrice;
     clickIncrease++;
   }
