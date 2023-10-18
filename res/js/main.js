@@ -35,7 +35,8 @@ cookie.onclick = () => {
   // ++ inkrement
   numberOfCookies += clickIncrease;
   console.log(numberOfCookies);
-  counter.innerText = "Cookies: " + numberOfCookies;
+  counter.innerText = "Počet nábojů: " + numberOfCookies;
+  
 };
 // () => scope
 upgrade.onclick = () => {
@@ -43,7 +44,7 @@ upgrade.onclick = () => {
     //odečtu sušenky
     numberOfCookies -= clickUpgradePrice;
     //numberOfCookies = numberOfCookies - 50
-    counter.innerText = "Cookies: " + numberOfCookies;
+    counter.innerText = "Počet nábojů: " + numberOfCookies;
     clickUpgradePrice += 50;
     clickzmena.innerText = "Buy Click upgrade: " + clickUpgradePrice;
     clickIncrease++;
@@ -55,7 +56,7 @@ autoclick.onclick = () => {
     numberOfCookies -= autoclickerPrice;
     
     //aktualizuju odstavec;
-    counter.innerText = "Cookies: " + numberOfCookies;
+    counter.innerText = "Počet nábojů: " + numberOfCookies;
     autoclickerPrice  += 100;
     autozmena.innerText = "Buy auto click: " + autoclickerPrice;
     autoclickIncrease++;
@@ -63,13 +64,13 @@ autoclick.onclick = () => {
     clearInterval(autoclicker);
     autoclicker = setInterval(() => {
       numberOfCookies += autoclickIncrease;
-      counter.innerText = "Cookies: " + numberOfCookies;
+      counter.innerText = "Počet nábojů: " + numberOfCookies;
     }, 1000);
   }
 };
 
 const turnOnCheats = () => {
     numberOfCookies += 100000000;
-    counter.innerText = "Cookies: " + numberOfCookies;
+    counter.innerText = "Počet nábojů: " + numberOfCookies;
 }
 turnOnCheats ()
